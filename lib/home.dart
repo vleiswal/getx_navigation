@@ -33,18 +33,18 @@ class Home extends StatelessWidget {
           RaisedButton(
             child: Text('Back to Main'),
             onPressed: () {
-              Get.back();
+              Get.back(result: 'Data from Home Screen....');
             },
             color: Colors.blueAccent,
           ),
           SizedBox(height: 10),
-          Text(
-            "${Get.arguments}",
-            style: TextStyle(
-              color: Colors.redAccent,
-              fontSize: 14,
-            ),
-          ),
+          // Text(
+          //   "${Get.arguments}",
+          //   style: TextStyle(
+          //     color: Colors.redAccent,
+          //     fontSize: 14,
+          //   ),
+          // ),
         ],
       )),
     );

@@ -22,13 +22,15 @@ class MyApp extends StatelessWidget {
             children: [
               RaisedButton(
                 child: Text('Goto Home'),
-                onPressed: () {
+                onPressed: () async {
                   // Get.to(
                   //   Home(),
                   //   fullscreenDialog: true,
                   //   transition: Transition.leftToRightWithFade,
                   //   duration: Duration(milliseconds: 4000),
-                  Get.to(Home(), arguments: 'Data from MAIN..');
+                  //Get.to(Home(), arguments: 'Data from MAIN..');
+                  var data = await Get.to(Home());
+                  print('Data from Home is: $data');
                 },
               ),
             ],

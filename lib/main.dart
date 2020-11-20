@@ -12,27 +12,29 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Navigation',
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('getx Navigation'),
-          ),
-          body: Center(
-              child: Column(
+        appBar: AppBar(
+          title: Text('getx Navigation'),
+        ),
+        body: Center(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               RaisedButton(
                 child: Text('Goto Home'),
                 onPressed: () {
-                  Get.to(
-                    Home(),
-                    fullscreenDialog: true,
-                    transition: Transition.leftToRightWithFade,
-                    duration: Duration(milliseconds: 500),
-                  );
+                  // Get.to(
+                  //   Home(),
+                  //   fullscreenDialog: true,
+                  //   transition: Transition.leftToRightWithFade,
+                  //   duration: Duration(milliseconds: 4000),
+                  Get.to(Home(), arguments: 'Data from MAIN..');
                 },
               ),
             ],
-          ))),
+          ),
+        ),
+      ),
     );
   }
 }

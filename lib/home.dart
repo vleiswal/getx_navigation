@@ -37,6 +37,14 @@ class Home extends StatelessWidget {
             },
             color: Colors.blueAccent,
           ),
+          SizedBox(height: 10),
+          Text(
+            "${Get.arguments}",
+            style: TextStyle(
+              color: Colors.redAccent,
+              fontSize: 14,
+            ),
+          ),
         ],
       )),
     );

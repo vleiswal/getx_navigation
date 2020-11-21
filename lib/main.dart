@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                   //   fullscreenDialog: true,
                   //   transition: Transition.leftToRightWithFade,
                   //   duration: Duration(milliseconds: 4000),
-                  //Get.to(Home(), arguments: 'Data from MAIN..');
+                  Get.to(Home(), arguments: 'Data from MAIN..');
                   var data = await Get.to(Home());
                   print('Data from Home is: $data');
                 },
